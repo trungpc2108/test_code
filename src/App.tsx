@@ -4,7 +4,7 @@ import './App.css'
 import Layout from './components/layout'
 import Homepages from './components/homepages'
 import CartPage from './components/cartPage'
-import Productdetail from './components/productdetail'
+import Index from './components'
 
 function App() {
 
@@ -14,8 +14,7 @@ function App() {
         <Route path='' element={<Layout />}>
           <Route path='home' element={<Homepages />} />
           <Route path='cart' element={<CartPage />} />
-            {/*conflict-main  */}
-          <Route path='detail' element={<Productdetail />} />
+          <Route path='index' element={<Index />} />
 
         </Route>
       </Routes>
