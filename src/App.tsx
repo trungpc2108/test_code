@@ -1,10 +1,10 @@
 
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Layout from './components/layout'
-import Homepages from './components/homepages'
 import CartPage from './components/cartPage'
-import Product from './components/product'
+import Homepages from './components/homepages'
+import Layout from './components/layout'
+import Index_in from './components/index_in'
 
 function App() {
 
@@ -14,7 +14,8 @@ function App() {
         <Route path='' element={<Layout />}>
           <Route path='home' element={<Homepages />} />
           <Route path='cart' element={<CartPage />} />
-          <Route path='product' element={<Product />} />
+          <Route path='index_in' element={<Index_in />} />
+
 
 
         </Route>
