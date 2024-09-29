@@ -4,6 +4,7 @@ import './App.css'
 import Layout from './components/layout'
 import Homepages from './components/homepages'
 import CartPage from './components/cartPage'
+import Productdetail from './components/productdetail'
 
 function App() {
 
@@ -13,10 +14,8 @@ function App() {
         <Route path='' element={<Layout />}>
           <Route path='home' element={<Homepages />} />
           <Route path='cart' element={<CartPage />} />
-          <Route path='cart' element={<CartPage />} />
-          <Route path='cart' element={<CartPage />} />
-          <Route path='cart' element={<CartPage />} />
-          <Route path='home' element={<Homepages />} />
+            {/*conflict-main  */}
+          <Route path='detail' element={<Productdetail />} />
 
         </Route>
       </Routes>
