@@ -4,6 +4,7 @@ import './App.css'
 import Layout from './components/layout'
 
 import Page from './components/page'
+
 import CartPage from './components/cartPage'
 
 
@@ -18,6 +19,9 @@ function App() {
 
           <Route path='page' element={<Page />}/>
           <Route path='page' element={<CartPage />}/>
+
+          <Route path='cart' element={<CartPage />}/>
+
 
 
         </Route>
